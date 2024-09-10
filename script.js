@@ -102,8 +102,6 @@ function handleUserChoice(choice) {
   scis.onclick = null;
 }
 
-
-
 // game display section
 // getting the pictures from assets folder
 function displayImage(imageName1, imageName2) {
@@ -113,20 +111,20 @@ function displayImage(imageName1, imageName2) {
 
   console.log(imageName1, imageName2);
   if (imageName2 == 0) {
-    imgElement.src = `/assets/icons8-rock-96.png`;
+    imgElement.src = `./assets/icons8-rock-96.png`;
   } else if (imageName2 == 1) {
-    imgElement.src = "/assets/icons8-paper-100.png";
+    imgElement.src = "./assets/icons8-paper-100.png";
   } else if (imageName2 == 2) {
-    imgElement.src = `/assets/icons8-scissor-100.png`;
+    imgElement.src = `./assets/icons8-scissor-100.png`;
   }
   if (imageName1 == 0) {
-    img_op.src = `/assets/icons8-rock-96.png`;
+    img_op.src = `./assets/icons8-rock-96.png`;
   } else if (imageName1 == 1) {
-    img_op.src = "/assets/icons8-paper-100.png";
+    img_op.src = "./assets/icons8-paper-100.png";
   } else if (imageName1 == 2) {
-    img_op.src = `/assets/icons8-scissor-100.png`;
-  }else if(imageName1 == -1){
-    img_op.src = "/assets/icons8-no-entry-96.png"
+    img_op.src = `./assets/icons8-scissor-100.png`;
+  } else if (imageName1 == -1) {
+    img_op.src = "./assets/icons8-no-entry-96.png";
   }
   ch_img.classList.remove("hide");
   ch_img.classList.add("show");
